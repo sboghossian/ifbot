@@ -32,7 +32,7 @@ The seed bot, scored with the offline overlap judge (token F1 against the refere
 | dev     | 7    | 40    | 0.175    |
 | heldout | 1    | 30    | 0.033    |
 
-These are the only numbers this project claims. The seed is meant to be bad: most of its dev wins come from greetings, smalltalk and three facts.
+These are the seed's numbers; the demo run below is the only other result this project reports. The seed is meant to be bad: most of its dev wins come from greetings, smalltalk and three facts.
 
 ## Layout
 
@@ -130,11 +130,13 @@ One short run, recorded in `docs/demo-run-1.jsonl`. The grown bot is on the `dem
 | seed | 7/40 (0.175) | 1/30 (0.033) |
 | after 2 rounds | 30/40 (0.750) | 16/30 (0.533) |
 
-Setup: two rounds of five agent proposers (Claude Sonnet, about 1.6 million tokens in total), offline overlap judge. Each proposer added one new knowledge module. Ten candidates were submitted: seven were kept and three rejected. One rejection was the leak check firing on a generic smalltalk reply that happened to equal a held-out reference; the other two did not raise the held-out score. The bot grew to 2906 lines.
+Setup: two rounds of five agent proposers (Claude Sonnet, about 1.6 million tokens in total), offline overlap judge. Each proposer added one new knowledge module. Ten candidates were submitted: seven were kept and three rejected. One rejection was the leak check: a smalltalk reply in the candidate was identical to a held-out reference answer. The proposer's transcript never mentions the held-out file, but whether the match was coincidence was not established; the other two did not raise the held-out score. The bot grew to 2906 lines.
 
 Read these numbers with care:
 
 - The held-out figure is optimistic. The person running the loop had read the held-out questions, saw per-category held-out scores between rounds, and wrote round-two briefs that named likely question shapes. That leaks held-out signal into the proposers. A clean run needs an operator who never sees the held-out set.
+- Proposers were not sandboxed. They ran as the same user with read access to the held-out file and were only instructed to stay inside their workspace. Their transcripts contain no mention of the held-out file, which is evidence, not proof.
+- The grown modules hold about 1,500 agent-written entries. A scan for numbers and risky terms and a read of roughly 50 health and money entries found nothing wrong, but most entries are unreviewed. They are not advice.
 - The run was orchestrated by hand, not with `evolve run`. The gate replaces the whole bot on accept, so parallel candidates built on the same base would overwrite each other. Each candidate's new module was copied onto a fresh workspace of the current best before `evolve submit`. A rebase step in the loop is not implemented yet.
 - Accepted changes can cost elsewhere: one accepted candidate dropped dev from 0.725 to 0.625, and science on held-out went from 4/4 to 3/4 by the end, because newer modules outbid older ones.
 - The judge is word overlap. 0.533 means the reply shares enough words with the reference on 16 of 30 questions, not that 16 answers are correct.
@@ -144,6 +146,7 @@ Read these numbers with care:
 - The overlap judge is crude. It rewards word overlap with the reference, not correctness, and it will give credit to a wrong answer that reuses the question's words. Treat its win rate as a training signal, not a quality measure.
 - Held-out secrecy is a convention, not a sandbox. The workspace never contains the held-out file, the gate runs candidate code in a separate interpreter with an empty working directory and a minimal environment, and the `ast` checks catch obvious tricks. But on one machine, a proposer runs as your user and can read `data/heldout.jsonl` if it goes looking, and static checks can be evaded. Run proposers you do not trust in a container or a separate account.
 - Repeated hill-climbing on a 30-row held-out set will overfit it. Each accepted change is selected on those rows, so the held-out win rate drifts upward optimistically. Refresh the held-out data now and then.
+- The ledger's best score is not tied to the bot it was measured on. If you check out a different bot (for example the seed after a run), move `runs/ledger.jsonl` aside first, or every submission is compared with a score your bot does not have.
 - The seed bot is tiny: a few facts, greetings, a name memory, arithmetic and a fallback. Dev and held-out sets are small and were written by hand for everyday topics; they are not a benchmark of general ability.
 - The reference answers are short everyday statements written for this project. Do not rely on them as advice.
 
