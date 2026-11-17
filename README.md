@@ -121,6 +121,24 @@ python3 -m ifbot evolve run --rounds 5 --proposer-cmd "..." --judge command --ju
 
 If your judge calls a model, that is where the model call and its key live. Nothing inside ifbot makes one. Use the same judge for the whole climb: the ledger compares win rates across rows, and numbers from different judges are not comparable.
 
+## Demo run
+
+One short run, recorded in `docs/demo-run-1.jsonl`. The grown bot is on the `demo/run-1` branch; `main` keeps the seed.
+
+| | dev | held-out |
+| --- | --- | --- |
+| seed | 7/40 (0.175) | 1/30 (0.033) |
+| after 2 rounds | 30/40 (0.750) | 16/30 (0.533) |
+
+Setup: two rounds of five agent proposers (Claude Sonnet, about 1.6 million tokens in total), offline overlap judge. Each proposer added one new knowledge module. Ten candidates were submitted: seven were kept and three rejected. One rejection was the leak check firing on a generic smalltalk reply that happened to equal a held-out reference; the other two did not raise the held-out score. The bot grew to 2906 lines.
+
+Read these numbers with care:
+
+- The held-out figure is optimistic. The person running the loop had read the held-out questions, saw per-category held-out scores between rounds, and wrote round-two briefs that named likely question shapes. That leaks held-out signal into the proposers. A clean run needs an operator who never sees the held-out set.
+- The run was orchestrated by hand, not with `evolve run`. The gate replaces the whole bot on accept, so parallel candidates built on the same base would overwrite each other. Each candidate's new module was copied onto a fresh workspace of the current best before `evolve submit`. A rebase step in the loop is not implemented yet.
+- Accepted changes can cost elsewhere: one accepted candidate dropped dev from 0.725 to 0.625, and science on held-out went from 4/4 to 3/4 by the end, because newer modules outbid older ones.
+- The judge is word overlap. 0.533 means the reply shares enough words with the reference on 16 of 30 questions, not that 16 answers are correct.
+
 ## Limits
 
 - The overlap judge is crude. It rewards word overlap with the reference, not correctness, and it will give credit to a wrong answer that reuses the question's words. Treat its win rate as a training signal, not a quality measure.

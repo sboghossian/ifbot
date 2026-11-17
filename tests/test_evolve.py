@@ -18,16 +18,21 @@ from ifbot.paths import DEFAULT_ROOT, bot_dir, data_path, ledger_path
 
 IGNORE = shutil.ignore_patterns("__pycache__", "*.pyc", "runs")
 
+# The improving candidate answers a made-up held-out question that setUp adds to the
+# temp project, so these tests do not depend on what the live bot already knows.
+FIXTURE_ROW = (
+    '{"id": "held-fixture", "category": "science", '
+    '"instruction": "What colour is a ripe zorblat fruit?", '
+    '"output": "A ripe zorblat fruit is bright teal in colour."}'
+)
+
 IMPROVER = '''
 from ..arbiter import Proposal
 
 
 def propose(ctx):
-    t = set(ctx.tokens)
-    if {"sky", "blue"} <= t:
-        return Proposal("The sky is blue because air scatters blue light from the Sun.", 0.9)
-    if {"largest", "planet"} <= t:
-        return Proposal("The largest planet is Jupiter.", 0.9)
+    if "zorblat" in set(ctx.tokens):
+        return Proposal("A zorblat fruit is teal in colour when it is ripe.", 0.95)
     return None
 '''
 
@@ -55,6 +60,8 @@ class EvolveCase(unittest.TestCase):
         self.root = self.tmp / "proj"
         for name in ("ifbot", "data", "tests"):
             shutil.copytree(str(DEFAULT_ROOT / name), str(self.root / name), ignore=IGNORE)
+        with open(str(data_path(self.root, "heldout")), "a", encoding="utf-8") as f:
+            f.write(FIXTURE_ROW + "\n")
         self._n = 0
 
     def workspace(self):
