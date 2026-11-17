@@ -1,0 +1,40 @@
+{"id": "dev-001", "category": "cooking", "instruction": "How long should I boil an egg for a hard boiled result?", "output": "Boil the egg for about ten to twelve minutes for a hard boiled result, then cool it in cold water."}
+{"id": "dev-002", "category": "cooking", "instruction": "What can I use instead of buttermilk in a recipe?", "output": "Stir a tablespoon of lemon juice or vinegar into a cup of milk and let it sit for a few minutes."}
+{"id": "dev-003", "category": "cooking", "instruction": "How do I keep cut avocado from going brown?", "output": "Brush the cut surface with lemon juice and store it in an airtight container in the fridge."}
+{"id": "dev-004", "category": "cooking", "instruction": "Why do recipes say to rest meat after cooking?", "output": "Resting lets the juices spread back through the meat, so it stays moist when you cut it."}
+{"id": "dev-005", "category": "cooking", "instruction": "How do I stop pasta from sticking together?", "output": "Use plenty of boiling water and stir the pasta during the first minute of cooking."}
+{"id": "dev-006", "category": "home", "instruction": "How do I unclog a slow sink drain at home?", "output": "Pour hot water down the drain, then use a plunger or a drain snake to clear the blockage."}
+{"id": "dev-007", "category": "home", "instruction": "How often should I check my smoke detector?", "output": "Test your smoke detector every month and replace the batteries as soon as it starts chirping."}
+{"id": "dev-008", "category": "home", "instruction": "What is a good way to remove limescale from a kettle?", "output": "Boil a mix of water and white vinegar in the kettle, let it sit, then rinse it out well."}
+{"id": "dev-009", "category": "home", "instruction": "How do I stop a wooden door from squeaking?", "output": "Rub a little lubricant, such as silicone spray or petroleum jelly, on the hinge pins."}
+{"id": "dev-010", "category": "home", "instruction": "How should I store fresh parsley so it lasts longer?", "output": "Keep the parsley in a glass of water in the fridge, loosely covered with a bag."}
+{"id": "dev-011", "category": "health", "instruction": "How much water should I drink on a normal day?", "output": "Needs vary from person to person, but drinking water regularly through the day and when you feel thirsty is a good habit."}
+{"id": "dev-012", "category": "health", "instruction": "Why is it important to wash your hands?", "output": "Washing your hands with soap removes germs and helps stop infections from spreading."}
+{"id": "dev-013", "category": "health", "instruction": "What are good habits for better sleep?", "output": "Keep a regular bedtime, avoid screens just before bed, and keep your bedroom dark and quiet."}
+{"id": "dev-014", "category": "health", "instruction": "How can I look after my eyes when working at a computer?", "output": "Take regular breaks to look at something far away, and make sure your screen is not too bright."}
+{"id": "dev-015", "category": "health", "instruction": "What should I do if I get a small cut?", "output": "Wash the cut with clean water, press on it with a clean cloth to stop the bleeding, and cover it with a bandage."}
+{"id": "dev-016", "category": "travel", "instruction": "What should I pack in a carry-on bag for a short trip?", "output": "Pack a change of clothes, small containers of toiletries, your charger, and your travel documents."}
+{"id": "dev-017", "category": "travel", "instruction": "How early should I get to the airport?", "output": "Check your airline's advice, but arriving a couple of hours before an international flight is common."}
+{"id": "dev-018", "category": "travel", "instruction": "How can I avoid jet lag?", "output": "Shift your sleep schedule a little before you leave, drink water, and get daylight at your destination."}
+{"id": "dev-019", "category": "travel", "instruction": "What documents do I need when travelling abroad?", "output": "You usually need a valid passport, and some countries also ask for a visa, so check the entry rules before you go."}
+{"id": "dev-020", "category": "travel", "instruction": "How do I keep my belongings safe in a crowded place?", "output": "Keep your bag closed and in front of you, and put valuables in an inside pocket."}
+{"id": "dev-021", "category": "tech", "instruction": "How do I make a strong password?", "output": "Use a long password made of several random words or characters, and use a different one for each account."}
+{"id": "dev-022", "category": "tech", "instruction": "What is the difference between RAM and storage?", "output": "RAM is short term memory the computer uses while it is running, while storage keeps your files even when the computer is off."}
+{"id": "dev-023", "category": "tech", "instruction": "What should I try first when my computer is running slowly?", "output": "Restart the computer, close programs you are not using, and check that you have free disk space."}
+{"id": "dev-024", "category": "tech", "instruction": "What is two factor authentication?", "output": "Two factor authentication asks for a second proof of identity, such as a code on your phone, as well as your password."}
+{"id": "dev-025", "category": "tech", "instruction": "Why should I back up my files?", "output": "A backup protects your files if your device is lost, damaged, or stolen, so keep a copy somewhere else."}
+{"id": "dev-026", "category": "science", "instruction": "At what temperature does water boil at sea level?", "output": "Water boils at 100 degrees Celsius at sea level."}
+{"id": "dev-027", "category": "science", "instruction": "What do plants need to make food?", "output": "Plants use sunlight, water, and carbon dioxide to make food in a process called photosynthesis."}
+{"id": "dev-028", "category": "science", "instruction": "What causes the seasons on Earth?", "output": "The seasons happen because the Earth's axis is tilted as it orbits the Sun."}
+{"id": "dev-029", "category": "science", "instruction": "What is the closest star to Earth?", "output": "The closest star to Earth is the Sun."}
+{"id": "dev-030", "category": "science", "instruction": "What are the three states of matter we learn about at school?", "output": "The three common states of matter are solid, liquid, and gas."}
+{"id": "dev-031", "category": "money", "instruction": "What is a budget?", "output": "A budget is a plan that compares the money you expect to receive with the money you expect to spend."}
+{"id": "dev-032", "category": "money", "instruction": "What is the difference between saving and investing?", "output": "Saving keeps money safe and easy to reach, while investing puts money into assets that can rise or fall in value."}
+{"id": "dev-033", "category": "money", "instruction": "What is interest on a loan?", "output": "Interest is the extra amount you pay for borrowing money, usually shown as a percentage."}
+{"id": "dev-034", "category": "money", "instruction": "Why is an emergency fund useful?", "output": "An emergency fund is money set aside to cover unexpected costs, so you do not need to borrow when something goes wrong."}
+{"id": "dev-035", "category": "money", "instruction": "What does a credit score show?", "output": "A credit score gives lenders a rough idea of how reliably you have repaid money in the past."}
+{"id": "dev-036", "category": "smalltalk", "instruction": "Hello there!", "output": "Hello! How can I help you today?"}
+{"id": "dev-037", "category": "smalltalk", "instruction": "How are you today?", "output": "I'm doing well, thanks for asking. How are you?"}
+{"id": "dev-038", "category": "smalltalk", "instruction": "Thanks a lot for your help", "output": "You're welcome! Let me know if you need anything else."}
+{"id": "dev-039", "category": "smalltalk", "instruction": "What's your name?", "output": "My name is ifbot. What should I call you?"}
+{"id": "dev-040", "category": "smalltalk", "instruction": "Goodbye, see you later", "output": "Goodbye! Have a great day."}

@@ -1,0 +1,30 @@
+{"id": "held-001", "category": "cooking", "instruction": "How long does it take to cook white rice on the stove?", "output": "White rice usually takes about fifteen to twenty minutes to cook on the stove once the water is simmering."}
+{"id": "held-002", "category": "cooking", "instruction": "How do I stop onions from making me cry?", "output": "Chill the onion first and use a sharp knife, since a sharp blade releases fewer of the irritating compounds."}
+{"id": "held-003", "category": "cooking", "instruction": "Why do you add salt to pasta water?", "output": "Salt seasons the pasta as it cooks, which gives it more flavor than adding salt afterwards."}
+{"id": "held-004", "category": "cooking", "instruction": "How can I tell if an egg is still fresh?", "output": "Place the egg in a bowl of water: a fresh egg sinks and lies flat, while an older egg tends to stand up or float."}
+{"id": "held-005", "category": "home", "instruction": "How do I clean a microwave easily?", "output": "Heat a bowl of water with a slice of lemon for a few minutes, then wipe the inside with a cloth."}
+{"id": "held-006", "category": "home", "instruction": "How can I keep my house cooler in summer without air conditioning?", "output": "Close the curtains during the day, open the windows at night when it is cooler, and use fans to move the air."}
+{"id": "held-007", "category": "home", "instruction": "What is the best way to dust a room?", "output": "Start at the top and work down, using a damp or microfibre cloth so the dust is trapped instead of spread around."}
+{"id": "held-008", "category": "home", "instruction": "How do I get rid of a bad smell in the fridge?", "output": "Throw out anything that has spoiled, clean the shelves, and leave an open box of baking soda inside."}
+{"id": "held-009", "category": "health", "instruction": "Why is it good to eat vegetables?", "output": "Vegetables provide fibre, vitamins, and minerals that help keep your body healthy."}
+{"id": "held-010", "category": "health", "instruction": "How can I be more active during a desk job?", "output": "Stand up and walk around regularly, take the stairs, and fit in a short walk during your breaks."}
+{"id": "held-011", "category": "health", "instruction": "What should I do if I get a sunburn?", "output": "Move out of the sun, cool the skin with cool water, and keep it covered while it heals. See a doctor if it blisters badly or you feel unwell."}
+{"id": "held-012", "category": "health", "instruction": "Why do I need to rest when I am ill?", "output": "Resting gives your body the energy it needs to fight the illness and recover."}
+{"id": "held-013", "category": "travel", "instruction": "How can I learn a few phrases before visiting another country?", "output": "Use a phrasebook or a language app to learn greetings, thank you, and a few polite questions before you go."}
+{"id": "held-014", "category": "travel", "instruction": "How do I find a good place to eat when I am travelling?", "output": "Ask locals or hotel staff for suggestions, and look for busy places where local people are eating."}
+{"id": "held-015", "category": "travel", "instruction": "How can I save money when booking a trip?", "output": "Compare prices on several sites, be flexible with your dates, and book early when you can."}
+{"id": "held-016", "category": "travel", "instruction": "What should I do if I lose my passport abroad?", "output": "Report the loss to the local police and contact your country's embassy or consulate for help getting a replacement."}
+{"id": "held-017", "category": "tech", "instruction": "What is a VPN used for?", "output": "A VPN sends your internet traffic through an encrypted connection, which helps protect your privacy on public networks."}
+{"id": "held-018", "category": "tech", "instruction": "Why do apps keep asking me to update?", "output": "Updates fix bugs, close security holes, and sometimes add new features."}
+{"id": "held-019", "category": "tech", "instruction": "What is the cloud in computing?", "output": "The cloud means using computers on the internet to store files or run programs instead of using only your own device."}
+{"id": "held-020", "category": "tech", "instruction": "How can I spot a phishing email?", "output": "Be wary of urgent messages, unexpected links or attachments, and senders whose address looks slightly wrong."}
+{"id": "held-021", "category": "science", "instruction": "Why is the sky blue?", "output": "The sky looks blue because air scatters blue light from the Sun more than it scatters red light."}
+{"id": "held-022", "category": "science", "instruction": "What gas do humans breathe out?", "output": "Humans breathe out carbon dioxide."}
+{"id": "held-023", "category": "science", "instruction": "What is the largest planet in our solar system?", "output": "Jupiter is the largest planet in our solar system."}
+{"id": "held-024", "category": "science", "instruction": "What is the water cycle?", "output": "The water cycle is how water evaporates, forms clouds, falls as rain or snow, and flows back to the sea."}
+{"id": "held-025", "category": "money", "instruction": "What is inflation?", "output": "Inflation is a general rise in prices over time, which means money buys less than it did before."}
+{"id": "held-026", "category": "money", "instruction": "Why do people compare prices before buying something big?", "output": "Comparing prices helps you find a better deal and avoid paying more than you need to."}
+{"id": "held-027", "category": "money", "instruction": "What is a bank account used for?", "output": "A bank account is a safe place to keep your money and a way to receive payments and pay bills."}
+{"id": "held-028", "category": "smalltalk", "instruction": "Good morning!", "output": "Good morning! How can I help you today?"}
+{"id": "held-029", "category": "smalltalk", "instruction": "Can you help me with something?", "output": "Of course, I'm happy to help. What do you need?"}
+{"id": "held-030", "category": "smalltalk", "instruction": "Nice to meet you", "output": "Nice to meet you too! What can I do for you?"}
